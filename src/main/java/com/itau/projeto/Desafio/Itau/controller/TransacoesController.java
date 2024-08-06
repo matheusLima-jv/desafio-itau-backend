@@ -43,7 +43,7 @@ public class TransacoesController {
 
     private void validaTransacao(TransacaoRequest transacaoRequest) {
         if(transacaoRequest.getValor().compareTo(BigDecimal.ZERO) < 0 ){
-            throw new IllegalArgumentException(" Valor de transação invalido ")
+            throw new IllegalArgumentException(" Valor de transação invalido ");
         }
     }
 
